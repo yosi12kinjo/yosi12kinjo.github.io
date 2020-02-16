@@ -1,0 +1,1 @@
+# yosi12kinjo.github.io
