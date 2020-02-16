@@ -7,7 +7,7 @@
   <meta name="description" content="ポートフォリオサイト">
   <meta name="author" content="yosi12">
 
-  <title>Git - YOSI12'S PORTFORIO</title>
+  <title>gulp - YOSI12'S PORTFORIO</title>
 
 
 
@@ -36,14 +36,51 @@
 
 <body>
   <div id="post" class="container">
-    <h1 id="git">Git</h1>
+    <h1 id="gulp">gulp</h1>
+
+<ul>
+  <li><a href="https://gulpjs.com/" title="gulp.js - The streaming build system">gulp.js - The streaming build system</a></li>
+</ul>
+
+<h2 id="enoent-errorが出た場合">ENOENT errorが出た場合</h2>
 
 <blockquote>
-  <p>Git（ギット[2][3][4]）は、プログラムのソースコードなどの変更履歴を記録・追跡するための分散型バージョン管理システムである。</p>
+  <p>ENOENT とは Error NO ENTry の略でファイルやディレクトリが存在しないという意味</p>
 
-  <p><a href="https://ja.wikipedia.org/wiki/Git">Git - Wikipedia</a></p>
+  <p><a href="https://qiita.com/YumaInaura/items/4b664cd00675502407ba">ENOENT とは Error NO ENTry の略でファイルやディレクトリが存在しないという意味のエラーメッセージらしい。 - Qiita</a></p>
 </blockquote>
 
+<blockquote>
+  <p>A cross platform solution to node’s spawn and spawnSync</p>
+
+  <p><a href="https://github.com/moxystudio/node-cross-spawn">moxystudio/node-cross-spawn: A cross platform solution to node's spawn and spawnSync</a></p>
+</blockquote>
+
+<blockquote>
+  <p>I got it. On Windows bunyan isn’t recognized in the console as a program but as a command. So to invoke it the use of cmd was needed.</p>
+
+  <p><a href="https://stackoverflow.com/questions/37459717/error-spawn-enoent-on-windows">node.js - Error: spawn ENOENT on Windows - Stack Overflow</a></p>
+</blockquote>
+
+<blockquote>
+  <p>spawnやexecを使う場合はcmdコマンドを叩けばいい</p>
+
+  <p><a href="https://qiita.com/Hayakuchi0/items/5c2f457e136926849bee">WindowsでChildeProcessを使ってもENOENTばかり出てくる際の対処法 - Qiita</a></p>
+</blockquote>
+
+<h2 id="詰まったところ">詰まったところ</h2>
+
+<h3 id="ディレクトリの指定ミス">ディレクトリの指定ミス</h3>
+
+<p>誤り</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src('scss/**/*.scss')
+</code></pre></div></div>
+
+<p>正解</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>src('src/scss/**/*.scss')
+</code></pre></div></div>
 
   </div>
 
